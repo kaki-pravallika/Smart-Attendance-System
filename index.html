@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Attendance System - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h1>Smart Attendance System</h1>
+            <div class="role-selector">
+                <button onclick="showLoginForm('teacher')" class="role-btn">Teacher Login</button>
+                <button onclick="showLoginForm('student')" class="role-btn">Student Login</button>
+                <button onclick="showLoginForm('parent')" class="role-btn">Parent Login</button>
+            </div>
+            
+            <div id="loginForm" class="login-form" style="display: none;">
+                <h2 id="loginTitle">Login</h2>
+                <form id="form" onsubmit="handleLogin(event)">
+                    <input type="text" id="username" placeholder="Username" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <button type="submit" class="submit-btn">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
